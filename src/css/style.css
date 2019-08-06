@@ -268,6 +268,19 @@ img {
   width: 50%;
   padding-right: 90px;
   position: relative;
+  text-align: center;
+}
+
+.offer-block__modal {
+  width: 100%;
+}
+
+.offer-block__modal .offer__subtitle {
+  max-width: unset;
+}
+
+.offer-block__modal .offer__input {
+  width: 100%;
 }
 
 .offer__title {
