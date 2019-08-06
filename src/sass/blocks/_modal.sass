@@ -9,9 +9,12 @@
     &_active
         display: flex 
     &-dialog
-        position: relative 
+        position: relative
+        display: flex 
+        justify-content: space-between
+        align-items: center
         margin: auto 
-        max-width: 450px
+        max-width: 1000px
         width: 90%
         min-width: 200px 
         background-color: #fff 
@@ -20,3 +23,8 @@
             position: absolute
             top: 0
             right: 0 
+    &-column
+        flex-basis: 50%
+    &-content
+        &__tab
+        display: none

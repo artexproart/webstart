@@ -78,6 +78,7 @@ img {
   padding: 20px 26px;
   font-size: 15px;
   border-radius: 10px;
+  color: red;
 }
 
 .navbar-block {
@@ -335,8 +336,17 @@ img {
 
 .modal-dialog {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: auto;
-  max-width: 450px;
+  max-width: 1000px;
   width: 90%;
   min-width: 200px;
   background-color: #fff;
@@ -347,5 +357,14 @@ img {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+.modal-column {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.modal-content {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
