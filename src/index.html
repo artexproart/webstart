@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ремонт</title>
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -84,15 +85,16 @@
 
                 <div class="offer-block">
                     <h2 class="section-title offer__title">
-                        Мы бесплатно реализуем дизайн-проект Вашего жилья и реализуем его!
+                        Мы бесплатно разработаем дизайн-проект Вашего жилья и реализуем его!
                     </h2>
                     <!-- /.section-title -->
                     <span class="section-subtitle offer__subtitle">Оставьте заявку на разработку бесплатного дизайн
                         проекта!</span>
-                    <form action="#" id="offer-form" class="form offer__form"></form>
-                    <input type="text" name="username" class="input offer__input" placeholder="Ваше имя">
-                    <input type="tel" name="userphone" class="input offer__input" placeholder="Ваш телефон">
-                    <button class="button offer__button">Получить бесплатный дизайн проект</button>
+                    <form action="#" id="offer-form" class="form offer__form">
+                        <input type="text" name="username" class="input offer__input" placeholder="Ваше имя">
+                        <input type="tel" name="userphone" class="input offer__input" placeholder="Ваш телефон">
+                        <button class="button offer__button">Получить бесплатный дизайн проект</button>
+                    </form>
                 </div>
 
                 <div class="success">
@@ -104,6 +106,40 @@
         </section>
         <!-- /.offer -->
     </main>
+
+    <section class="section portfolio">
+        <div class="container">
+            <h2 class="section-title portfolio__title">Работая с 2007 года, мы сделали более 500 ремонтов в квартирах и
+                домах</h2>
+            <div class="slider">
+                <div class="slider__item"><img class="slider__image" src="img/portfolio/slyde1.jpg" alt="slyde"></div>
+                <!-- /.slider__item -->
+                <div class="slider__item"><img class="slider__image" src="img/portfolio/slyde2.jpg" alt="slyde"></div>
+                <!-- /.slider__item -->
+                <div class="slider__item"><img class="slider__image" src="img/portfolio/slyde3.jpg" alt="slyde"></div>
+                <!-- /.slider__item -->
+                <div class="slider__item"><img class="slider__image" src="img/portfolio/slyde1.jpg" alt="slyde"></div>
+                <!-- /.slider__item -->
+                <div class="slider__item"><img class="slider__image" src="img/portfolio/slyde2.jpg" alt="slyde"></div>
+                <!-- /.slider__item -->
+                <div class="slider__item"><img class="slider__image" src="img/portfolio/slyde3.jpg" alt="slyde"></div>
+                <!-- /.slider__item -->
+            </div>
+            <div class="arrows portfolio__arrows">
+                <div class="arrows__left">
+                    <img src="img/portfolio/left-arrow.png" alt="left">
+                </div>
+                <div class="arrows__right">
+                    <img src="img/portfolio/right-arrow.png" alt="right">
+                </div>
+            </div>
+            <!-- /.arrows -->
+            <!-- /.slider -->
+            <!-- /.section-title portfolio__title -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.section portfolio -->
 
     <!-- второе видео урока 19 JQuery AJAX -->
     <!-- модальное окно -->
@@ -144,7 +180,35 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="js/modal.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/scripts.js"></script>
+    <!-- скрипт для слайдера -->
+    <script>
+        $(document).ready(function () {
+            $('.slider').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                prevArrow: $('.arrows__left'),
+                nextArrow: $('.arrows__right'),
+                responsive: [
+                    {
+                        breakpoint: 1200,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
 
 </body>
 

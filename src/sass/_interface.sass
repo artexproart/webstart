@@ -2,8 +2,7 @@
     box-sizing: border-box
 body
     +reg
-img
-    min-width: 100% 
+    
 .container 
     width: 1170px
     margin: auto
@@ -26,7 +25,8 @@ img
     padding: 90px 0
     &-title 
         font-size: 24px
-        +bold 
+        +bold
+        text-align: center 
     &-subtitle
         display: block
         font-size: 16px
@@ -35,5 +35,8 @@ img
     padding: 20px 26px
     font-size: 15px
     border-radius: 10px 
-    color: red
+.arrows
+    &__left, &__right
+        &:hover
+            cursor: pointer
     
