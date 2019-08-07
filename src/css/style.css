@@ -81,6 +81,22 @@ body {
   cursor: pointer;
 }
 
+.scrol-up {
+  background: transparent;
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.scrol-up img {
+  width: 100%;
+}
+
 .navbar-block {
   display: -webkit-box;
   display: -ms-flexbox;

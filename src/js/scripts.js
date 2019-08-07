@@ -6,10 +6,11 @@ $('offer-form').on('submit', function(event) {
         type: 'POST',
         data: $(this).serialize(),
         success: function(data) {
-            $('.success').html(data + ', Ваша форма отправлена');
+            console.log(data);
+            $('.success').html(data['username'] + ', Ваша форма отправлена');
         },
         error: function(jqXHR, taxtStatus) {
             console.log(jqXHR + ': ' + taxtStatus); 
         }
     })
-});
+}); 
