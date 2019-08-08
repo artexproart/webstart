@@ -8,6 +8,7 @@
     <title>Ремонт</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -73,7 +74,8 @@
                     </div>
                     <!-- /.hero-text -->
                     <div class="hero-jmage">
-                        <img src="img/hero/hero_right.png" alt="Вариант дизайна">
+                        <img class="wow zoomIn" data-wow-delay="0.2s" src="img/hero/hero_right.png"
+                            alt="Вариант дизайна">
                     </div>
                     <!-- /.hero-jmage -->
                 </div>
@@ -95,7 +97,8 @@
                     <form action="#" id="offer-form" class="form offer__form">
                         <input type="text" name="username" class="input offer__input" placeholder="Ваше имя">
                         <input type="tel" name="userphone" class="input offer__input" placeholder="Ваш телефон">
-                        <button class="button offer__button">Получить бесплатный дизайн проект</button>
+                        <button class="button offer__button wow rollIn" data-wow-delay="1s">Получить бесплатный дизайн
+                            проект</button>
                     </form>
                 </div>
 
@@ -146,13 +149,14 @@
     <section class="section price">
         <div class="container">
             <h2 class="section-title price__title">У нас очень гибкая система скидок на комплексные работы!
-                </h2>
+            </h2>
             <!-- /.section-title price__title -->
             <span class="section-subtitle price__subtitle">Прайс на наши услуги</span>
             <!-- /.section-subtitle -->
             <div class="cards">
-                <div class="card price__card">
-                    <div class="card__image"><img class="card__box" src="img/price/1.png" alt="Ремонт ванных комнат и с/у"></div>
+                <div class="card price__card wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="card__image"><img class="card__box" src="img/price/1.png"
+                            alt="Ремонт ванных комнат и с/у"></div>
                     <!-- /.card__image -->
                     <div class="card__text">
                         <h4 class="card__title">Ремонт ванных комнат и с/у</h4>
@@ -163,8 +167,9 @@
                     <!-- /.card__text -->
                 </div>
                 <!-- /.card -->
-                <div class="card price__card">
-                    <div class="card__image"><img class="card__box" src="img/price/2.png" alt="Ремонт комнат и квартир"></div>
+                <div class="card price__card wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="card__image"><img class="card__box" src="img/price/2.png" alt="Ремонт комнат и квартир">
+                    </div>
                     <!-- /.card__image -->
                     <div class="card__text">
                         <h4 class="card__title">Ремонт комнат и квартир</h4>
@@ -175,8 +180,9 @@
                     <!-- /.card__text -->
                 </div>
                 <!-- /.card -->
-                <div class="card price__card">
-                    <div class="card__image"><img class="card__box" src="img/price/3.png" alt="Отделка офисных помещений"></div>
+                <div class="card price__card wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="card__image"><img class="card__box" src="img/price/3.png"
+                            alt="Отделка офисных помещений"></div>
                     <!-- /.card__image -->
                     <div class="card__text">
                         <h4 class="card__title">Отделка офисных помещений</h4>
@@ -187,8 +193,9 @@
                     <!-- /.card__text -->
                 </div>
                 <!-- /.card -->
-                <div class="card price__card">
-                    <div class="card__image"><img class="card__box" src="img/price/4.png" alt="Ремонт в новостройках"></div>
+                <div class="card price__card wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="card__image"><img class="card__box" src="img/price/4.png" alt="Ремонт в новостройках">
+                    </div>
                     <!-- /.card__image -->
                     <div class="card__text">
                         <h4 class="card__title">Ремонт в новостройках</h4>
@@ -199,7 +206,7 @@
                     <!-- /.card__text -->
                 </div>
                 <!-- /.card -->
-                <div class="card price__card">
+                <div class="card price__card wow fadeInUp" data-wow-delay="0.5s">
                     <div class="card__image"><img class="card__box" src="img/price/5.png" alt="Ремонт кухонь"></div>
                     <!-- /.card__image -->
                     <div class="card__text">
@@ -211,8 +218,9 @@
                     <!-- /.card__text -->
                 </div>
                 <!-- /.card -->
-                <div class="card price__card">
-                    <div class="card__image"><img class="card__box" src="img/price/6.png" alt="Ремонт дач и коттеджей"></div>
+                <div class="card price__card wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="card__image"><img class="card__box" src="img/price/6.png" alt="Ремонт дач и коттеджей">
+                    </div>
                     <!-- /.card__image -->
                     <div class="card__text">
                         <h4 class="card__title">Ремонт дач и коттеджей</h4>
@@ -272,7 +280,12 @@
     <script src="js/slick.min.js"></script>
     <!-- скрипт для слайдера -->
     <script src="js/scripts.js"></script>
+    <script src="js/wow.min.js"></script>
+
     <script>
+        // инициализация WOW.js
+        new WOW().init();
+        // слайдер slick
         $(document).ready(function () {
             $('.slider').slick({
                 slidesToShow: 3,
