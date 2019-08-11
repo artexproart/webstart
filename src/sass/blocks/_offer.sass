@@ -15,7 +15,7 @@
         width: 50% 
         padding-right: 90px 
         position: relative
-        text-align: center
+        
         &__modal
             width: 100%
             .offer__subtitle
@@ -38,6 +38,18 @@
     &__button
         width: 100% 
         min-height: 70px 
+        +bold
+    &-text
+        display: flex
+        justify-content: space-between
+        margin-top: 30px
+        line-height: 24px
+    &__call
+        width: 224px
+.call
+    text-decoration: none
+    +bold 
+    color: black
 @media (max-width: 1200px)
     .offer
         background-size: cover
