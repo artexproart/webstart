@@ -837,6 +837,21 @@ body {
   margin-bottom: 39px;
 }
 
+@media (max-width: 768px) {
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .map {
+    background-image: url();
+    background-position: top center, center bottom;
+    background-size: 100% 50%, cover;
+    background-repeat: repeat-x, no-repeat;
+  }
+}
+
 .utp {
   background-color: #ffc000;
 }
@@ -846,6 +861,24 @@ body {
   padding: 100px 250px;
   font-size: 32px;
   line-height: 50px;
+}
+
+@media (max-width: 1200px) {
+  .utp-title {
+    padding: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .utp {
+    max-width: 580px;
+    width: 90%;
+  }
+  .utp-title {
+    padding: 30px;
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 
 .job-card {
@@ -926,6 +959,29 @@ body {
           justify-content: space-between;
 }
 
+@media (max-width: 1200px) {
+  .tops {
+    margin-top: 30px;
+  }
+  .job-card {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .tops {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 30px;
+    font-size: 12px;
+  }
+}
+
 .guarantee__title {
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
@@ -956,6 +1012,35 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
+}
+
+@media (max-width: 1200px) {
+  .guarantee__title {
+    font-size: 18px;
+  }
+  .guarantee__img {
+    padding-top: 20px;
+  }
+  .guarantee-card {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-top: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .guarantee__title {
+    font-size: 12px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    justify-content-flex-wrap: wrap;
+  }
+  .guarantee__text {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
 
 .modal {
