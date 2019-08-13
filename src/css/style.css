@@ -837,6 +837,95 @@ body {
   margin-bottom: 39px;
 }
 
+.utp {
+  background-color: #ffc000;
+}
+
+.utp-title {
+  text-align: center;
+  padding: 100px 250px;
+  font-size: 32px;
+  line-height: 50px;
+}
+
+.job-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.job__text {
+  padding-top: 25px;
+  padding-left: 25px;
+  padding-right: 35px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+.job-box__left {
+  width: 370px;
+  height: 410px;
+  background: url(../img/job/job-11.jpg) no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: relative;
+  background-color: #f7f7f7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.job-box__center {
+  width: 370px;
+  height: 410px;
+  background: url(../img/job/job-22.jpg) no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: relative;
+  background-color: #f7f7f7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.job-box__right {
+  width: 370px;
+  height: 410px;
+  background: url(../img/job/job-33.jpg) no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: relative;
+  background-color: #f7f7f7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .modal {
   position: fixed;
   left: 0;
