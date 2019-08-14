@@ -1,5 +1,5 @@
 // Обработка и отправка формы через AJXA
-$('offer-form').on('submit', function(event) {
+$('offers-form').on('submit', function(event) {
     event.preventDefault();
     $.ajax({
         url: '../mail.php',
@@ -12,5 +12,5 @@ $('offer-form').on('submit', function(event) {
         error: function(jqXHR, taxtStatus) {
             console.log(jqXHR + ': ' + taxtStatus); 
         }
-    })
+    });
 }); 

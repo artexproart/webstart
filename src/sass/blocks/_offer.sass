@@ -1,6 +1,6 @@
 .offer
     background: url(../img/bg_offer.png) no-repeat
-    background-position: center right
+    background-position: 280% 0
     background-size: contain
     position: relative
     &:before
@@ -25,6 +25,7 @@
     &__title  
         +bold
         line-height: 35px
+        margin-top: 0
         margin-bottom: 24px
         text-align: left
     &__subtitle
@@ -52,6 +53,7 @@
     color: black
 @media (max-width: 1200px)
     .offer
+        background-position: 100% 0
         background-size: cover
         &__input 
             width: 100%

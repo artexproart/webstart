@@ -4,8 +4,8 @@
         font-size: 30px
         line-height: 45px
         text-align: center
-        width: 700px
         margin: auto
+        max-width: 70%
     &-card
         display: flex
         justify-content: space-between
@@ -22,7 +22,7 @@
 @media (max-width: 1200px)
     .guarantee    
         &__title
-            font-size: 18px
+            font-size: 20px
         &__img
             padding-top: 20px
         &-card
@@ -31,11 +31,12 @@
             padding-top: 30px
             
 @media (max-width: 768px)
-    .guarantee    
+    .guarantee
+        padding: 0    
         &__title
             font-size: 12px
             justify-content: space-around
-                flex-wrap: wrap
+            flex-wrap: wrap
         &__text
             padding-top: 10px;
             padding-bottom: 10px

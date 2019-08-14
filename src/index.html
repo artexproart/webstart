@@ -6,21 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ремонт</title>
-    <link rel="stylesheet" href="css/normalize.css">
+    <!-- <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Yandex.Metrika counter -->
-    <script
-        type="text/javascript"> (function (m, e, t, r, i, k, a) { m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) }; m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a) })(window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(54884734, "init", { clickmap: true, trackLinks: true, accurateTrackBounce: true, webvisor: true, trackHash: true }); </script>
-    <noscript>
-        <div><img src="https://mc.yandex.ru/watch/54884734" style="position:absolute; left:-9999px;" alt="" /></div>
-    </noscript>
-    <!-- /Yandex.Metrika counter -->
+    <link rel="stylesheet" href="css/animate.css"> -->
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
 </head>
 
 <body>
-    <button class="scrol-up"><img src="img/up-button.svg"></button>
+    <button class="scrol-up"><img src="img/up-button.svg" alt="Вверх"></button>
     <!-- кнопка прокрутки вверх scrol-up -->
     <nav class="navbar">
         <div class="container">
@@ -81,8 +74,8 @@
 
                     </div>
                     <!-- /.hero-text -->
-                    <div class="hero-jmage">
-                        <img class="wow zoomIn" data-wow-delay="0.2s" src="img/hero/hero_right.png"
+                    <div class="hero-img">
+                        <img class="wow zoomIn" data-wow-delay="0.2s" src="img/hero/hero-progresiv.jpg"
                             alt="Вариант дизайна">
                     </div>
                     <!-- /.hero-jmage -->
@@ -101,7 +94,7 @@
                     <!-- /.section-title -->
                     <span class="section-subtitle offer__subtitle">Оставьте заявку на разработку бесплатного дизайн
                         проекта!</span>
-                    <form action="#" id="offer-form" class="form offer__form">
+                    <form action="#" id="offers-form" class="form offer__form">
                         <input type="text" name="username" class="input offer__input" placeholder="Ваше имя">
                         <input type="tel" name="userphone" class="input offer__input" placeholder="Ваш телефон">
                         <button class="button offer__button wow rollIn" data-wow-delay="1s">Получить бесплатный дизайн
@@ -174,7 +167,7 @@
                 <!-- /.section-subtitle -->
                 <div class="cards">
                     <div class="card price__card wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="card__image"><img class="card__box" src="img/price/1.png"
+                        <div class="card__image"><img class="card__box" src="img/price/1.jpg"
                                 alt="Ремонт ванных комнат и с/у"></div>
                         <!-- /.card__image -->
                         <div class="card__text">
@@ -187,7 +180,7 @@
                     </div>
                     <!-- /.card -->
                     <div class="card price__card wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="card__image"><img class="card__box" src="img/price/2.png"
+                        <div class="card__image"><img class="card__box" src="img/price/2.jpg"
                                 alt="Ремонт комнат и квартир">
                         </div>
                         <!-- /.card__image -->
@@ -201,7 +194,7 @@
                     </div>
                     <!-- /.card -->
                     <div class="card price__card wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="card__image"><img class="card__box" src="img/price/3.png"
+                        <div class="card__image"><img class="card__box" src="img/price/3.jpg"
                                 alt="Отделка офисных помещений"></div>
                         <!-- /.card__image -->
                         <div class="card__text">
@@ -214,7 +207,7 @@
                     </div>
                     <!-- /.card -->
                     <div class="card price__card wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="card__image"><img class="card__box" src="img/price/4.png"
+                        <div class="card__image"><img class="card__box" src="img/price/4.jpg"
                                 alt="Ремонт в новостройках">
                         </div>
                         <!-- /.card__image -->
@@ -228,7 +221,7 @@
                     </div>
                     <!-- /.card -->
                     <div class="card price__card wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="card__image"><img class="card__box" src="img/price/5.png" alt="Ремонт кухонь"></div>
+                        <div class="card__image"><img class="card__box" src="img/price/5.jpg" alt="Ремонт кухонь"></div>
                         <!-- /.card__image -->
                         <div class="card__text">
                             <h4 class="card__title">Ремонт кухонь</h4>
@@ -240,7 +233,7 @@
                     </div>
                     <!-- /.card -->
                     <div class="card price__card wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="card__image"><img class="card__box" src="img/price/6.png"
+                        <div class="card__image"><img class="card__box" src="img/price/6.jpg"
                                 alt="Ремонт дач и коттеджей">
                         </div>
                         <!-- /.card__image -->
@@ -355,20 +348,23 @@
         <section class="section guarantee">
             <div class="container">
                 <div class="guarantee-block">
-                    <h3 class="guarantee__title">Все наши гарантийные обязательства подробно и прозрачно описаны в договоре</h3>
+                    <h3 class="guarantee__title">Все наши гарантийные обязательства подробно и прозрачно описаны в
+                        договоре</h3>
                     <!-- /.guarantee__title -->
                     <div class="guarantee-card">
                         <div class="guarantee-sale">
-                            <img src="img/guarantee/gar-1.png" alt="Договор стр 1" class="guarantee__img">
+                            <img src="img/guarantee/gar-1.jpg" alt="Договор стр 1" class="guarantee__img">
                             <p class="guarantee__text">Гарантия на качество выполняемых работ</p>
-                        </div>                        
+                        </div>
                         <div class="guarantee-sale">
-                            <img src="img/guarantee/gar-2.png" alt="Договор стр 2" class="guarantee__img">
-                            <p class="guarantee__text">Гарантия на фиксированные цены Виды работ и цены на них прописаны в договоре</p>
-                        </div>                       
+                            <img src="img/guarantee/gar-2.jpg" alt="Договор стр 2" class="guarantee__img">
+                            <p class="guarantee__text">Гарантия на фиксированные цены Виды работ и цены на них прописаны
+                                в договоре</p>
+                        </div>
                         <div class="guarantee-sale">
-                            <img src="img/guarantee/gar-3.png" alt="Договор стр 3" class="guarantee__img">
-                            <p class="guarantee__text">Гарантия на точное соблюдение сроков и ответственность за их невыполнение</p>
+                            <img src="img/guarantee/gar-3.jpg" alt="Договор стр 3" class="guarantee__img">
+                            <p class="guarantee__text">Гарантия на точное соблюдение сроков и ответственность за их
+                                невыполнение</p>
                         </div>
                     </div>
                     <!-- /.guarantee-card -->
@@ -386,7 +382,7 @@
                         <h3 class="interview__title">Мы можем озвучить вам примерную стоимость работы и материалов по
                             телефону</h3>
                         <span class="interview__subtitle">Для этого нужно ответить на 4 вопроса</span>
-                        <ui class="interview-list">
+                        <ul class="interview-list">
                             <li class="interview-list__item">
                                 <span class="interview-list__counter">1</span>
                                 <span class="interview-list__text">Какова площадь помещения?</span>
@@ -404,7 +400,7 @@
                                 <span class="interview-list__counter">4</span>
                                 <span class="interview-list__text">Назначение помещения</span>
                             </li>
-                        </ui>
+                        </ul>
                     </div>
                     <!-- /.interview brif__interview -->
                     <div class="form brif__form">
@@ -428,7 +424,7 @@
     </main>
     <footer class="footer">
         <div class="map" id="map">
-            <script type="text/javascript" charset="utf-8" async
+            <script type="text/javascript" charset="utf-8" asynс
                 src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0bcbc7752553d3fc6f8b508cca786e59972971efb94c3188eae46bd3ad36837a&amp;width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=folse"></script>
         </div>
         <!--Карта Яндекс -->
@@ -441,17 +437,24 @@
                         <li class="li contacts-list__item">
                             <span class="contacts-list__icon"><img src="img/footer/map-placeholder.png"
                                     alt="icon"></span>
-                            <span class="contacts-list__text">г. Москва<br><b>ул. Ленинга, д. 10, корпус 2, оф.
-                                    308</b></span>
+                            <div class="wrap">
+                                <span class="contacts-list__text">г. Москва</span>
+                                <p class="contacts-list__bold">ул. Ленина, д. 10, корпус 2, оф. 308</p>
+                            </div>
                         </li>
                         <li class="li contacts-list__item">
                             <span class="contacts-list__icon"><img src="img/footer/clock-with.png" alt="icon"></span>
-                            <span class="contacts-list__text">Режим работы:<br><strong>с 9:00 до 18:00</strong></span>
+                            <div class="wrap">
+                                <span class="contacts-list__text">Режим работы:</span>
+                                <p class="contacts-list__bold">с 9:00 до 18:00</p>
+                            </div>
                         </li>
                         <li class="li contacts-list__item">
                             <span class="contacts-list__icon"><img src="img/footer/clock-with.png" alt="icon"></span>
-                            <span class="contacts-list__text">Телефон:<br><a href="tel:++ 74954225131">+ 7 (495)
-                                    42-251-31</a></span>
+                            <div class="wrap">
+                                <span class="contacts-list__text">Телефон</span>
+                                <p class="contacts-list__bold"><a href="tel:+74954225131">+ 7 (495) 42-251-31</a></p>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -497,10 +500,16 @@
         </div>
     </div>
 
+    <link rel="stylesheet" href="css/style.css">
+
     <!-- СКРИПТЫ -->
-    <!-- <script src="js/main.js"></script> -->
+    <!-- Lezi Load XТ -->
+    <script src="js/lezi.js"></script>
+
+    <script src="js/main.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
     <script src="js/modal.js"></script>
     <script src="js/slick.min.js"></script>
     <!-- скрипт для слайдера -->
@@ -513,7 +522,6 @@
     <!-- jQuery маска для телефона  -->
     <script src="js/jquery.maskedinput.min.js"></script>
 
-
     <script>
         // инициализация WOW.js
         new WOW().init();
@@ -525,7 +533,8 @@
                     username: "required",
                     email: {
                         required: true,
-                        email: true
+                        email: true,
+                        tel: true
                     }
                 },
                 messages: {
@@ -533,8 +542,8 @@
                         required: "Укажите ваше имя",
                         minlength: jQuery.validator.format("Как вас зовут: {0}")
                     },
-                    email: "Укажите ваш правильный email"
-                    // phone: "Введите номер телефона"
+                    email: "Укажите ваш правильный email",
+                    tel: "Введите номер телефона"
                 }
             });
 
@@ -566,6 +575,13 @@
             });
         });
     </script>
+    <!-- Yandex.Metrika counter -->
+    <!-- <script
+        type="text/javascript"> (function (m, e, t, r, i, k, a) { m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) }; m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a) })(window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(54884734, "init", { clickmap: true, trackLinks: true, accurateTrackBounce: true, webvisor: true, trackHash: true }); </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/54884734" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript> -->
+    <!-- /Yandex.Metrika counter -->
 </body>
 
 </html>

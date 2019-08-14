@@ -30,13 +30,31 @@
             display: flex 
             align-items: flex-start
             margin-bottom: 39px
+        &__bold
+            display: block
+            +bold
+            a
+                text-decoration: none
+                color: black
 @media (max-width: 768px)
+    .contacts
+        &-block
+            justify-content: center
     .footer
+        display: flex
         flex-direction: column-reverse
     .map
+        position: relative
+        width: 100%
         background-image: url()
         background-position: top center, center bottom
         background-size: 100% 50%, cover
-        background-repeat: repeat-x, no-repeat
+        background-repeat: repeat-x, no-repeat 
+    .contacts
+        justify-content: center
+        width: 100%
+        flex-basis: auto
+        padding-top: 10px
+        padding-left: 0px
 
 
