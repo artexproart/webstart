@@ -1,10 +1,9 @@
 // кропка проекрутки вверх
-$('.scrol-up').on('click', function(){
+$('.scrol-up').on('click', function() {
     $('body, html').animate({
-    scrollTop: 0
+        scrollTop: 0
     }, 800);
-    // return false;
-    });		 
+});
 
 // var button = document.querySelector('#button');
 // var modal = document.querySelector('#modal');
