@@ -11,21 +11,6 @@ function defaultTask(done) {
     done();
 }
 
-//вариант с сайта gulp
-// function defaultTask(cb) {
-//     console.log('галп работает');
-//     cb();
-//   }
-  
-//   exports.default = defaultTask
-
-//вариант Яна
-// var gulp = require('gulp')
-
-// gulp.task('default', function () { 
-//   console.log('Hello Gulp!') 
-// });
-
 //создание папки dist выгрузка css 
 
 gulp.task('minify-css', function(done) {

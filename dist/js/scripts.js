@@ -6,7 +6,7 @@ $('#offer-form').on('submit', function(event) {
         type: 'POST',
         data: $(this).serialize(),
         success: function(data) {
-            console.log(data);
+            // console.log(data);
             $('.success').html(data['username'] + ', Ваша форма отправлена, спасибо большое');
         },
         error: function(jqXHR, taxtStatus) {

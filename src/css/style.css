@@ -3797,6 +3797,7 @@ body {
   background-color: #ffd200;
   border: none;
   padding: 18px 30px;
+  outline: none;
 }
 
 .button:hover {
@@ -4513,6 +4514,14 @@ body {
 .form__description {
   display: block;
   text-align: center;
+}
+
+.form__clicks {
+  height: 70px;
+  width: 100%;
+  max-width: 370px;
+  margin-top: 15px;
+  margin-bottom: 30px;
 }
 
 @media (max-width: 1200px) {
