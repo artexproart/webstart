@@ -23,3 +23,20 @@ $(document).ready(function() {
    });
 
 });
+
+// всплывающее мини окно
+$(document).ready(function() {
+    var button = $('#buttonmini');
+    var modal = $('#modalmini');
+    var close = $('#closemini');
+
+ 
+    button.on('click', function() {
+        modal.addClass('modalmini_active');
+    });
+
+    close.on('click', function() {
+         modal.removeClass('modalmini_active');
+    });
+ 
+ });
