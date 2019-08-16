@@ -14,19 +14,47 @@
         justify-content: space-between
         align-items: center
         margin: auto 
-        max-width: 1000px
+        max-width: 570px
+        max-height: 674px
         width: 90%
         min-width: 200px 
         background-color: #fff 
-        padding: 40px
+        padding: 80px 100px
         &__close
             position: absolute
             top: 0
             right: 0 
-    &-column
-        flex-basis: 50%
+    &-center
+        text-align: center
+        font-size: 16px
+        line-height: 35px               
     &-content
         &__tab
         display: none
-    .offer__title
-        text-align: center
+    .offer
+        &__title
+            text-align: center
+            font-size: 22px
+        &-subtitle
+            &__low
+                text-align: center
+                display: block
+                font-weight: 400
+                line-height: 20px
+                padding-top: 30px
+            &__tel
+                text-align: center
+                display: block
+                padding-top: 30px
+                +bold 
+                font-size: 24px
+@media (max-width: 768px)
+    .modal
+        &-dialog
+            padding: 10px 20px
+    .offer
+        &__title
+            padding-top: 20px
+        &-subtitle
+            &__tel
+                padding-bottom: 20px 

@@ -3824,7 +3824,7 @@ body {
 
 .input {
   border: 1px solid #dddddd;
-  padding: 20px 26px;
+  padding: 24px 26px;
   font-size: 15px;
   border-radius: 10px;
 }
@@ -3952,10 +3952,11 @@ body {
 .hero-text__title {
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
+  margin-top: 30px;
   margin-bottom: 15px;
   font-size: 41px;
   font-weight: 700;
-  line-height: 60px;
+  line-height: 58px;
 }
 
 .hero-text__subtitle {
@@ -4052,7 +4053,7 @@ body {
 
 .offer {
   background: url(../img/bg_offer.png) no-repeat;
-  background-position: 280% 0;
+  background-position: center right;
   background-size: contain;
   position: relative;
 }
@@ -4075,6 +4076,7 @@ body {
 
 .offer-block__modal {
   width: 100%;
+  padding-right: 0px;
 }
 
 .offer-block__modal .offer__subtitle {
@@ -4088,15 +4090,17 @@ body {
 .offer__title {
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
+  font-size: 24px;
   line-height: 35px;
-  margin-top: 0;
-  margin-bottom: 24px;
+  margin-top: -10px;
+  margin-bottom: 20px;
   text-align: left;
 }
 
 .offer__subtitle {
   max-width: 250px;
   margin-bottom: 30px;
+  font-size: 16px;
 }
 
 .offer__input {
@@ -4122,12 +4126,13 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 30px;
+  margin-top: 25px;
   line-height: 24px;
 }
 
 .offer__call {
   width: 224px;
+  line-height: 24px;
 }
 
 .call {
@@ -4171,7 +4176,7 @@ body {
   font-size: 30px;
   line-height: 45px;
   margin: auto;
-  margin-bottom: 100px;
+  margin-bottom: 93px;
 }
 
 .portfolio__arrows {
@@ -4193,6 +4198,7 @@ body {
 .price__title {
   margin: auto;
   margin-bottom: 50px;
+  margin-top: 5px;
 }
 
 .price__subtitle {
@@ -4221,12 +4227,13 @@ body {
 }
 
 .card__text {
-  padding: 40px;
+  padding: 35px;
+  padding-bottom: 43px;
 }
 
 .card__title {
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
   font-size: 17px;
@@ -4283,11 +4290,13 @@ body {
 }
 
 .cards {
+  max-width: 1176px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -4336,6 +4345,10 @@ body {
   max-width: 160px;
   line-height: 20px;
   margin: auto;
+}
+
+.steps {
+  margin-top: -55px;
 }
 
 .steps__title {
@@ -4656,8 +4669,8 @@ body {
 
 .utp-title {
   text-align: center;
-  padding: 100px 250px;
-  font-size: 32px;
+  padding: 60px;
+  font-size: 28px;
   line-height: 50px;
 }
 
@@ -4682,10 +4695,11 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 8px;
 }
 
 .job__text {
-  padding-top: 25px;
+  padding-top: 5px;
   padding-left: 25px;
   padding-right: 35px;
   font-size: 16px;
@@ -4776,23 +4790,27 @@ body {
   }
 }
 
+.guarantee {
+  margin-top: -47px;
+}
+
 .guarantee__title {
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
+  margin-top: -47px;
   font-size: 30px;
   line-height: 45px;
   text-align: center;
   margin: auto;
-  max-width: 70%;
+  max-width: 60%;
 }
 
 .guarantee-card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   text-align: center;
   padding-top: 100px;
 }
@@ -4800,7 +4818,7 @@ body {
 .guarantee__text {
   width: 300px;
   text-align: center;
-  padding-top: 40px;
+  padding-top: 8px;
   padding-bottom: 100px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
@@ -4869,11 +4887,12 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin: auto;
-  max-width: 1000px;
+  max-width: 570px;
+  max-height: 674px;
   width: 90%;
   min-width: 200px;
   background-color: #fff;
-  padding: 40px;
+  padding: 80px 100px;
 }
 
 .modal-dialog__close {
@@ -4882,9 +4901,10 @@ body {
   right: 0;
 }
 
-.modal-column {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+.modal-center {
+  text-align: center;
+  font-size: 16px;
+  line-height: 35px;
 }
 
 .modal-content {
@@ -4893,5 +4913,35 @@ body {
 
 .modal .offer__title {
   text-align: center;
+  font-size: 22px;
+}
+
+.modal .offer-subtitle__low {
+  text-align: center;
+  display: block;
+  font-weight: 400;
+  line-height: 20px;
+  padding-top: 30px;
+}
+
+.modal .offer-subtitle__tel {
+  text-align: center;
+  display: block;
+  padding-top: 30px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+@media (max-width: 768px) {
+  .modal-dialog {
+    padding: 10px 20px;
+  }
+  .offer__title {
+    padding-top: 20px;
+  }
+  .offer-subtitle__tel {
+    padding-bottom: 20px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -73,3 +73,10 @@ gulp.task('htmlmin', function(done) {
     .pipe(gulp.dest('dist/img'))
     done();
   });
+
+  // перенос PHP
+  gulp.task('php', function(done) {
+    return gulp.src('./src/*.php')
+    .pipe(gulp.dest('dist/'))
+    done();
+  });

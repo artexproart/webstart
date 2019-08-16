@@ -1,6 +1,6 @@
 .offer
     background: url(../img/bg_offer.png) no-repeat
-    background-position: 280% 0
+    background-position: center right
     background-size: contain
     position: relative
     &:before
@@ -18,19 +18,22 @@
         
         &__modal
             width: 100%
+            padding-right: 0px
             .offer__subtitle
                 max-width: unset
             .offer__input
                 width: 100%
     &__title  
         +bold
+        font-size: 24px
         line-height: 35px
-        margin-top: 0
-        margin-bottom: 24px
+        margin-top: -10px
+        margin-bottom: 20px
         text-align: left
     &__subtitle
         max-width: 250px
         margin-bottom: 30px  
+        font-size: 16px
     &__input
         margin-bottom: 30px
         width: 240px
@@ -43,10 +46,11 @@
     &-text
         display: flex
         justify-content: space-between
-        margin-top: 30px
+        margin-top: 25px
         line-height: 24px
     &__call
         width: 224px
+        line-height: 24px
 .call
     text-decoration: none
     +bold 

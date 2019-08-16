@@ -1,5 +1,5 @@
 // Обработка и отправка формы через AJXA
-$('offers-form').on('submit', function(event) {
+$('#offer-form').on('submit', function(event) {
     event.preventDefault();
     $.ajax({
         url: '../mail.php',
@@ -7,10 +7,12 @@ $('offers-form').on('submit', function(event) {
         data: $(this).serialize(),
         success: function(data) {
             console.log(data);
-            $('.success').html(data['username'] + ', Ваша форма отправлена');
+            $('.success').html(data['username'] + ', Ваша форма отправлена, спасибо большое');
         },
         error: function(jqXHR, taxtStatus) {
             console.log(jqXHR + ': ' + taxtStatus); 
         }
     });
-}); 
+});
+
+// $('.success').html(data['username'] + ', Ваша форма отправлена');
