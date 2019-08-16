@@ -42,5 +42,4 @@ $(document).ready(function () {
     close.on('click', function () {
         modal.removeClass('modalmini_active');
     });
-
 });
