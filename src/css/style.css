@@ -4128,7 +4128,7 @@ body {
 .offer__title {
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 35px;
   margin-top: -10px;
   margin-bottom: 20px;
@@ -4201,9 +4201,9 @@ body {
   .offer__title {
     font-family: 'Museo Sans Bold', sans-serif;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 22px;
-    margin-top: -60px;
+    margin-top: 20px;
     margin-bottom: 16px;
   }
   .offer-block {
@@ -4219,7 +4219,7 @@ body {
     width: 275px;
   }
   .offer__button {
-    width: 275px;
+    width: 278px;
     min-height: 70px;
     font-family: 'Museo Sans Bold', sans-serif;
     font-weight: 700;
@@ -4733,7 +4733,7 @@ body {
   .brif {
     background-image: url("../img/brif/bg-yellow.png"), url("../img/brif/bg-right.jpg");
     background-position: top center, center bottom;
-    background-size: 100% 50%, cover;
+    background-size: 100% 508px, cover;
     background-repeat: repeat-x, no-repeat;
   }
   .brif-block {
@@ -4742,10 +4742,17 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .brif__form {
+    padding-left: 0px;
+  }
+  .brif__input {
+    margin-bottom: 5px;
+  }
+  .brif__button {
+    margin-top: -10px;
+  }
   .interview {
-    margin-bottom: -199px;
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+    display: block;
   }
   .interview__title {
     margin-top: -50px;
@@ -4780,15 +4787,25 @@ body {
     margin-top: 5px;
   }
   .form {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+    display: block;
   }
   .form__title {
-    font-size: 20px;
+    font-size: 18px;
+    line-height: 25.35px;
+    margin-top: 90px;
     margin-bottom: 15px;
   }
   .form__subtitle {
-    margin-bottom: 20px;
+    margin-top: 24px;
+    margin-bottom: 30px;
+    font-size: 14px;
+  }
+  .form__description {
+    padding: 0px 80px;
+    font-size: 13px;
+    line-height: 24px;
+    margin-top: -12px;
+    margin-bottom: -33px;
   }
 }
 
@@ -4896,6 +4913,15 @@ body {
         flex-basis: auto;
     padding-top: 10px;
     padding-left: 0px;
+  }
+  .contacts__title {
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 23px;
+    margin-bottom: 33px;
+  }
+  .contacts-list__icon {
+    margin-right: 15px;
   }
 }
 
@@ -5174,7 +5200,14 @@ body {
 
 .modal .offer__title {
   text-align: center;
-  font-size: 22px;
+  font-size: 18px;
+  width: 100%;
+}
+
+.modal .offer-subtitle {
+  font-size: 14px;
+  line-height: 15px;
+  width: 90%;
 }
 
 .modal .offer-subtitle__low {
@@ -5198,11 +5231,18 @@ body {
   .modal-dialog {
     padding: 10px 20px;
   }
+  .modal-center {
+    line-height: 15px;
+  }
   .offer__title {
     padding-top: 20px;
   }
   .offer-subtitle__tel {
+    padding-top: 10px;
     padding-bottom: 20px;
+  }
+  .offer__button {
+    width: 250px;
   }
 }
 

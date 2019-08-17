@@ -24,7 +24,7 @@ $('#offer-forms').on('submit', function(event) {
         success: function(data) {
             // console.log(data);
             $('.success').html(data['username'] + ', Ваша форма отправлена, спасибо большое');
-            $('#modalmini').modal.addClass('modalmini_active');
+            // $('#modalmini').modal.addClass('modalmini_active');
         },
         error: function(jqXHR, taxtStatus) {
             console.log(jqXHR + ': ' + taxtStatus); 
