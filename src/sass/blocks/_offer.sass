@@ -25,7 +25,7 @@
                 width: 100%
     &__title  
         +bold
-        font-size: 18px
+        font-size: 24px
         line-height: 35px
         margin-top: -10px
         margin-bottom: 20px
@@ -43,6 +43,7 @@
         width: 100% 
         min-height: 70px 
         +bold
+        padding: 0px 50px
     &-text
         display: flex
         justify-content: space-between
@@ -64,14 +65,58 @@
             margin-bottom: 10px
         &__button
             font-size: 13px
+        &__call
+            width: 200px
+        &-text
+            flex-direction: column
+            font-size: 15px
+            line-height: 24px
+            margin-left: 7px
+            margin-bottom: -40px
+ 
 @media (max-width: 768px)
     .offer
         background: #ffffff
         &__title  
             +bold
-            font-size: 14px
+            font-size: 20px
             line-height: 22px
             margin-top: 20px
+            margin-bottom: 16px
+        &-block 
+            width: 100%
+            padding-right: 0
+        &__subtitle
+            margin-bottom: 28px  
+            font-size: 18px
+        &__input 
+            margin-bottom: 7px
+            width: 275px
+        &__button
+            max-width: 276px 
+            min-height: 70px 
+            +bold
+            padding: 0 50px
+            font-size: 14px
+            line-height: 18px   
+        &-text
+            flex-direction: column
+            font-size: 15px
+            line-height: 24px
+            margin-left: 7px
+            margin-bottom: -40px
+        &__call
+            width: 233px
+        &__callmin
+            width: 200px
+            padding-top: 5px
+@media (max-width: 360px)
+    .offer
+        &__title  
+            +bold
+            font-size: 18px
+            line-height: 22px
+            margin-top: -66px
             margin-bottom: 16px
         &-block 
             width: 100%
@@ -83,7 +128,7 @@
             margin-bottom: 7px
             width: 275px
         &__button
-            width: 278px 
+            width: 276px 
             min-height: 70px 
             +bold
             padding: 0 50px

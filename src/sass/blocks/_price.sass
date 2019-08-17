@@ -63,8 +63,12 @@
     &s 
         max-width: 1176px
         display: flex
-        justify-content: space-between
+        justify-content: space-around
         flex-wrap: wrap
+@media (max-width: 1200px)
+    .card
+        &:hover
+            box-shadow: none
 @media (max-width: 768px)
     .price
         &__title  

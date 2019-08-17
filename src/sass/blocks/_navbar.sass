@@ -17,12 +17,14 @@
         margin-left: 30px
         +bold 
         font-size: 13px
+        width: 170px
+        height: 49px
     &__phone
         display: inline-block
         color: $text-color
         font-size: 20px
         text-decoration: none
-        margin-top: 10px
+        margin-top: 6px
         +bold
     &-mini
         &__logo
@@ -38,18 +40,28 @@
             width: 90px 
 @media (max-width: 768px)
     .navbar
-        padding-top: 12px
         &__contacts
             display: none
+@media (max-width: 400px)
+    .navbar
+        padding-top: 12px
         &__button
-            font-size: 12px
-            padding: 12px 19px
+            width: 137px
+            height: 39px
+            font-size: 10px
+            letter-spacing: -0.3px
+            margin-bottom: 20px
+            margin-top: 5px
+            margin-right: 13px
         &__logo
             display: none
         &-mini
             &__logo
                 display: flex
                 background-size: 100%
-                width: 60px 
+                width: 100%
+                margin-bottom: 14px
+                margin-left: -5px
+
 
    
