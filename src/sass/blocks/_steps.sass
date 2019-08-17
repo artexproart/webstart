@@ -1,5 +1,4 @@
 .step
-    
     flex-basis: 20%
     text-align: center
     position: relative
@@ -34,26 +33,42 @@
         &__title
             margin: auto
             margin-bottom: 50px
+            font-size: 30px
+            line-height: 45px
+            max-width: 670px
         &__subtitle
             text-align: center
             margin-bottom: 66px
         &-block
             display: flex  
             flex-wrap: wrap
-@media (max-width: 768px)
-    .step
-        margin-bottom: 30px
-        &:after
-            display: none
-        &s
-            &-block
-                flex-direction: column
 @media (max-width: 1200px)
     .step
         margin-bottom: 30px
         flex-basis: 50%
         &:after
             display: none
+        &__image
+            margin-bottom: 13px
+        &__text
+            padding-top: 6px
         &s
             &-block
-                justify-content: center 
+                margin-top: -45px 
+            &__title
+                margin-top: -99px
+                margin-bottom: 14px
+                font-size: 18px
+                line-height: 20px
+            &__subtitle
+                font-size: 14px
+                line-height: 45px
+@media (max-width: 768px)
+    .step
+        margin-bottom: 22px
+        &:after
+            display: none
+        &s
+            margin-bottom: -30px
+            &-block
+                flex-direction: column

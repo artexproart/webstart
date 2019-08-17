@@ -3,6 +3,7 @@
         margin: auto
         margin-bottom: 50px
         margin-top: 5px
+        max-width: 550px
     &__subtitle
         margin-bottom: 59px
         text-align: center
@@ -64,3 +65,30 @@
         display: flex
         justify-content: space-between
         flex-wrap: wrap
+@media (max-width: 768px)
+    .price
+        &__title  
+            font-size: 18px
+            line-height: 22px
+            margin-top: -42px
+            margin-bottom: 10px
+            max-width: 260px
+        &__subtitle
+            margin-bottom: 40px
+            text-align: center
+            font-size: 14px
+            line-height: 45px
+        &__card
+            margin-bottom: 30px
+    .card
+        width: 271px
+        height: 300px
+        &__box
+            max-width: 100% 
+            margin: auto 
+        &__text
+            padding: 18px
+        &__title
+            font-size: 13px
+            line-height: 45px
+            margin-bottom: 0px
