@@ -22,8 +22,8 @@ $(document).ready(function () {
         modal.removeClass('modal_active');
     });
 
-});
-
+});  
+ 
 // всплывающее мини окно
 $(document).ready(function () {
     var button = $('#buttonmini');
@@ -36,10 +36,7 @@ $(document).ready(function () {
         modal.addClass('modalmini_active');
     });
 
-    buttons.on('click', function () {
-        modal.addClass('modalmini_active');
-    });
     close.on('click', function () {
         modal.removeClass('modalmini_active');
     });
-});
+}); 
