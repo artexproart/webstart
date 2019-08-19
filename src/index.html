@@ -34,11 +34,11 @@
                         id="button">Перезвоните мне</button>
                     <!-- /.button navbar__button -->
                 </div>
-                <!-- /.navbar__info -->
+                <!-- /.navbar__info --> 
             </div>
             <!-- /.navbar-block -->
         </div>
-        <!-- /.container -->
+        <!-- /.container --> 
     </nav>
     <!-- /.navbar -->
     <main>
@@ -99,12 +99,10 @@
                         проекта!</span>
                     <form action="#" id="offer-form" class="form offer__form actions">
                         <div class="offer-wrap">
-                            <input type="text" name="username" class="input offer__input username"
-                                placeholder="Ваше имя">
+                            <input type="text" name="username" class="input offer__input username1" placeholder="Ваше имя">
                         </div>
                         <div class="offer-wrap">
-                            <input type="tel" name="userphone" class="input offer__input phone userphone"
-                                placeholder="Ваш телефон">
+                            <input type="tel" name="userphone" class="input offer__input phone userphone1" placeholder="Ваш телефон">
                         </div>
                         <button class="button offer__button wow rollIn" data-wow-delay="1s">Получить
                             бесплатный дизайн
@@ -420,10 +418,8 @@
                             <h3 class="form__title">Оставьте заявку на бесплатный<br>расчёт ремонта по телефону</h3>
                             <span class="form__subtitle">Для этого заполните форму ниже</span>
                             <form action="#" id="brif-form" class="action">
-                                <input type="text" name="username" class="input brif__input username"
-                                    placeholder="Ваше имя">
-                                <input type="tel" name="userphone" class="input brif__input phone userphone"
-                                    placeholder="Ваш телефон">
+                                <input type="text" name="username" class="input brif__input username2" placeholder="Ваше имя">
+                                <input type="tel" name="userphone" class="input brif__input phone userphone2" placeholder="Ваш телефон">
                                 <div class="form__clicks" id="buttonsmini">
                                     <button class="button brif__button">Рассчитать стоимость</button>
                                 </div>
@@ -468,7 +464,7 @@
                             </div>
                         </li>
                         <li class="li contacts-list__item">
-                            <span class="contacts-list__icon"><img src="img/footer/clock-with.png" alt="icon"></span>
+                            <span class="contacts-list__icon"><img src="img/footer/phone-call-button.png" alt="icon"></span>
                             <div class="wrap">
                                 <span class="contacts-list__text">Телефон</span>
                                 <p class="contacts-list__bold"><a href="tel:+74954225131">+ 7 (495) 42-251-31</a></p>
@@ -494,9 +490,8 @@
                     <span class="section-subtitle modal-center offer__subtitle">Заполните поля ниже - мы свяжемся с
                         Вами</span>
                     <form action="#" id="offer-formms" class="form offer__form">
-                        <input type="text" name="username" class="input offer__input username" placeholder="Ваше имя">
-                        <input type="tel" name="userphone" class="input offer__input phone userphone"
-                            placeholder="Ваш телефон">
+                        <input type="text" name="username" class="input offer__input username3" placeholder="Ваше имя">
+                        <input type="tel" name="userphone" class="input offer__input phone userphone3" placeholder="Ваш телефон">
                         <button class="button offer__button">Узнать стоимость</button>
                         <span class="offer-subtitle__low">Или Вы можете перезвонить нам сами по телефону:</span>
                         <span class="offer-subtitle__tel">+7 (8182) 42-51-31</span>
@@ -549,28 +544,6 @@
         new WOW().init();
         // слайдер slick
         $(document).ready(function () {
-            // валидация формы
-            // $('#brif-form').validate({
-            //     rules: {
-            //         username: "required",
-            //         email: {
-            //             required: true,
-            //             email: true,
-            //             tel: true
-            //         }
-            //     },
-            //     messages: {
-            //         username: {
-            //             required: "Укажите ваше имя",
-            //             minlength: jQuery.validator.format("Как вас зовут: {0}")
-            //         },
-            //         email: "Укажите ваш правильный email",
-            //         tel: "Введите номер телефона"
-            //     }
-            // });
-
-            // // маска для телефона
-            // $('.phone').mask('+7 (999) 999-99-99');
 
             // скрипт слайдера
             $('.slider').slick({

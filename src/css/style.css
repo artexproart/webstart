@@ -4144,6 +4144,7 @@ body {
   width: 240px;
   display: inline-block;
   position: relative;
+  margin-right: 5px;
 }
 
 .offer-block .offer-wrap label.invalid {
@@ -4184,7 +4185,7 @@ body {
   min-height: 70px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
-  padding: 0px 50px;
+  padding: 0px 52px;
 }
 
 .offer-text {
@@ -4269,7 +4270,7 @@ body {
     min-height: 70px;
     font-family: 'Museo Sans Bold', sans-serif;
     font-weight: 700;
-    padding: 0 50px;
+    padding: 0 52px;
     font-size: 14px;
     line-height: 18px;
   }

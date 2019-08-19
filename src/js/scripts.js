@@ -1,6 +1,7 @@
-// Обработка и отправка формы через AJXA
+
 $(document).ready(function () {
     // валидация формы
+ 
     $('#offer-form').validate({
         rules: {
             username: {
@@ -35,6 +36,35 @@ $(document).ready(function () {
         errorElement: "label"
 
     });
+    
+    
+   
+   
+
+    $('#offer-form').on('submit', function (event) {
+        event.preventDefault();
+        var username1 = $('.username1').val();
+        var userphone1 = $('.userphone1').val();
+        
+        if (username1 == '' || userphone1 == '') {
+            valid = false;
+            return valid;
+        }
+
+        $.ajax({
+            url: 'mail.php',
+            type: 'POST',
+            data: $(this).serialize(),
+            success: function (valid) {
+                if (valid == true) {
+                    $('#modalmini').addClass('modalmini_active');
+                    $(this).trigger('reset');
+                }
+            }
+        });
+    });
+
+    // -------------------------------------------------
 
     $('#brif-form').validate({
         rules: {
@@ -71,6 +101,30 @@ $(document).ready(function () {
 
     });
 
+    $('#brif-form').on('submit', function (event) {
+        event.preventDefault();
+        var username2 = $('.username2').val();
+    var userphone2 = $('.userphone2').val();
+        if (username2 == '' || userphone2 == '') {
+            valid = false;
+            return valid;
+        };
+        $.ajax({
+            url: 'mail.php',
+            type: 'POST',
+            data: $(this).serialize(),
+            success: function (valid) {
+                if (valid == true) {                
+                $('#modalmini').addClass('modalmini_active');
+                $(this).trigger('reset');
+            } 
+        }
+
+        });
+    });
+
+    //-------------------------------------------
+
     $('#offer-formms').validate({
         rules: {
             username: {
@@ -105,15 +159,12 @@ $(document).ready(function () {
         errorElement: "label"
 
     });
- 
-    // маска для телефона
-    $('.phone').mask('+7 (999) 999-99-99');
 
-    $('form').on('submit', function (event) {
+    $('#offer-formms').on('submit', function (event) {
         event.preventDefault();
-        var username = $('.username').val();
-        var userphone = $('.userphone').val();
-        if (username == '' || userphone == '') {
+        var username3 = $('.username3').val();
+        var userphone3 = $('.userphone3').val();
+        if (username3 == '' || userphone3 == '') {
             valid = false;
             return valid;
         }
@@ -123,14 +174,15 @@ $(document).ready(function () {
             type: 'POST',
             data: $(this).serialize(),
             success: function (valid) {
-                if (valid == true) {                
-                $('#modalmini').addClass('modalmini_active');
-                $("form").trigger('reset');
-            } 
-        }
-
+                if (valid == true) {
+                    $('#modalmini').addClass('modalmini_active');
+                    $(this).trigger('reset');
+                }
+            }
         });
     });
+
+    $('.phone').mask('+7 (999) 999-99-99');
 
     $('.success').html(data['username'] + ', Ваша форма отправлена');
 
